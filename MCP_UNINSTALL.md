@@ -13,7 +13,7 @@ codex mcp list
 codex mcp remove aibuy
 ```
 
-如果当前 Codex 版本不支持 `remove`，请在 Codex 设置中只删除名为 `aibuy` 的 MCP 条目。不要删除其他 MCP 服务。
+如果客户端没有 `remove` 命令，请在客户端设置中只删除名为 `aibuy` 的 MCP 条目。不要删除其他 MCP 服务。
 
 ### Claude Code
 
