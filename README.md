@@ -1,8 +1,6 @@
 # AIBuy MCP 客户端工具包
 
-**当前版本：2026.11.22.1**
-
-GitHub 会根据仓库内容生成 ZIP 下载包：[下载 ZIP](https://github.com/LaoSun0720/aibuy-mcp-client/archive/refs/heads/main.zip)。
+GitHub 会根据仓库内容生成 ZIP 下载包：[下载接入工具包](https://github.com/LaoSun0720/aibuy-mcp-client/archive/refs/heads/main.zip)。
 
 MCP 服务地址：`https://mcp.aibuy.top/v1`
 
@@ -21,12 +19,11 @@ codex mcp login aibuy --oauth-client-registration dcr
 - [卸载、撤销授权和本机清理说明](MCP_UNINSTALL.md)
 - [Cursor 配置示例](aibuy-mcp-cursor.json)
 - [本机加密操作日志工具](aibuy_mcp_local_audit.py)
-- [文件校验值](CLIENT_SHA256SUMS)
 
 ## 安全与隐私
 
-此仓库只发布客户端配置、说明和本机日志工具，不包含 MCP 服务端源码、服务器密钥、网站账号密码、Cookie、访问令牌、刷新令牌或数据库。业务实现保留在 AIBuy 服务器上。
+工具包只包含连接配置、使用说明和本机日志工具，不包含网站密码、Cookie、访问令牌、刷新令牌、服务器密钥或数据库。业务数据只会在你完成授权后按所选权限处理。
 
-本机日志使用本机生成的密钥加密；服务端审计记录由服务端保管。不要把密钥或令牌粘贴给 AI。客户端配置和说明无需加密；分发到用户设备的程序无法保证绝对不可逆向，因此核心业务逻辑不随此工具包发布。
+本机日志使用设备上生成的密钥加密；服务器会保留必要的操作记录。不要把密钥或令牌粘贴给 AI。
 
-客户端每日最多检查一次版本，只提示更新，不会自动覆盖或安装文件。
+连接状态只在需要时检查，不会自动覆盖或安装文件。
